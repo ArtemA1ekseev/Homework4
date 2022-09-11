@@ -1,13 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Задача 5.");
-        int Age2 = 21;
-        if (Age2 >= 7 && Age2 < 18) {
-            System.out.println("Ребенок ходит в школу.");
-        } else if (Age2 >= 18 && Age2 < 24) {
-            System.out.println("Человек ходит в университет.");
-        } else if (Age2 >= 24) {
-            System.out.println("Человек ходит на работу.");
+        System.out.println("Задача 6.");
+        int WagonCapacity = 102;
+        int SeatPlace = 60;
+        int StandingRoom = WagonCapacity - SeatPlace;
+        int SeatsUsed = 65;
+        int OthersUsed = 31;
+        if (SeatsUsed < SeatPlace) {
+            System.out.println("Есть еще " + (SeatPlace - SeatsUsed) + " сидячих мест.");
+        } else {
+            System.out.println("Сидячих мест нет.");
+        }
+        if (OthersUsed < StandingRoom) {
+            System.out.println("Есть еще " + (StandingRoom - OthersUsed) + " стоячих мест.");
+        } else {
+            System.out.println("Стоячих мест нет.");
         }
     }
 }
